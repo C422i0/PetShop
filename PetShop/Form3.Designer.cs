@@ -29,18 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCadNome = new System.Windows.Forms.TextBox();
+            this.btnCadastoIni = new System.Windows.Forms.Button();
             this.txtCadSenha = new System.Windows.Forms.TextBox();
-            this.btnCadasto = new System.Windows.Forms.Button();
+            this.txtCadNome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCadHub = new System.Windows.Forms.Button();
+            this.btnVolta = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MintCream;
-            this.panel1.Controls.Add(this.btnCadasto);
+            this.panel1.Controls.Add(this.btnVolta);
+            this.panel1.Controls.Add(this.btnCadHub);
+            this.panel1.Controls.Add(this.btnCadastoIni);
             this.panel1.Controls.Add(this.txtCadSenha);
             this.panel1.Controls.Add(this.txtCadNome);
             this.panel1.Controls.Add(this.label2);
@@ -50,47 +54,67 @@
             this.panel1.Size = new System.Drawing.Size(200, 324);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnCadastoIni
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome";
+            this.btnCadastoIni.Location = new System.Drawing.Point(26, 184);
+            this.btnCadastoIni.Name = "btnCadastoIni";
+            this.btnCadastoIni.Size = new System.Drawing.Size(143, 23);
+            this.btnCadastoIni.TabIndex = 4;
+            this.btnCadastoIni.Text = "Cadastrar e voltar ao login";
+            this.btnCadastoIni.UseVisualStyleBackColor = true;
+            this.btnCadastoIni.Click += new System.EventHandler(this.btnCadasto_Click);
+            // 
+            // txtCadSenha
+            // 
+            this.txtCadSenha.Location = new System.Drawing.Point(26, 139);
+            this.txtCadSenha.Name = "txtCadSenha";
+            this.txtCadSenha.Size = new System.Drawing.Size(143, 20);
+            this.txtCadSenha.TabIndex = 3;
+            // 
+            // txtCadNome
+            // 
+            this.txtCadNome.Location = new System.Drawing.Point(26, 86);
+            this.txtCadNome.Name = "txtCadNome";
+            this.txtCadNome.Size = new System.Drawing.Size(143, 20);
+            this.txtCadNome.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 123);
+            this.label2.Location = new System.Drawing.Point(23, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Senha";
             // 
-            // txtCadNome
+            // label1
             // 
-            this.txtCadNome.Location = new System.Drawing.Point(44, 86);
-            this.txtCadNome.Name = "txtCadNome";
-            this.txtCadNome.Size = new System.Drawing.Size(100, 20);
-            this.txtCadNome.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome";
             // 
-            // txtCadSenha
+            // btnCadHub
             // 
-            this.txtCadSenha.Location = new System.Drawing.Point(44, 139);
-            this.txtCadSenha.Name = "txtCadSenha";
-            this.txtCadSenha.Size = new System.Drawing.Size(100, 20);
-            this.txtCadSenha.TabIndex = 3;
+            this.btnCadHub.Location = new System.Drawing.Point(26, 223);
+            this.btnCadHub.Name = "btnCadHub";
+            this.btnCadHub.Size = new System.Drawing.Size(143, 21);
+            this.btnCadHub.TabIndex = 5;
+            this.btnCadHub.Text = "Cadastrar e voltar ao Hub";
+            this.btnCadHub.UseVisualStyleBackColor = true;
+            this.btnCadHub.Click += new System.EventHandler(this.btnCadHub_Click);
             // 
-            // btnCadasto
+            // btnVolta
             // 
-            this.btnCadasto.Location = new System.Drawing.Point(44, 183);
-            this.btnCadasto.Name = "btnCadasto";
-            this.btnCadasto.Size = new System.Drawing.Size(100, 23);
-            this.btnCadasto.TabIndex = 4;
-            this.btnCadasto.Text = "Cadastrar";
-            this.btnCadasto.UseVisualStyleBackColor = true;
-            this.btnCadasto.Click += new System.EventHandler(this.btnCadasto_Click);
+            this.btnVolta.Location = new System.Drawing.Point(119, 301);
+            this.btnVolta.Name = "btnVolta";
+            this.btnVolta.Size = new System.Drawing.Size(81, 23);
+            this.btnVolta.TabIndex = 6;
+            this.btnVolta.Text = "Voltar ao Hub";
+            this.btnVolta.UseVisualStyleBackColor = true;
+            this.btnVolta.Click += new System.EventHandler(this.btnVolta_Click);
             // 
             // Form3
             // 
@@ -110,10 +134,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCadasto;
+        private System.Windows.Forms.Button btnCadastoIni;
         private System.Windows.Forms.TextBox txtCadSenha;
         private System.Windows.Forms.TextBox txtCadNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCadHub;
+        private System.Windows.Forms.Button btnVolta;
     }
 }

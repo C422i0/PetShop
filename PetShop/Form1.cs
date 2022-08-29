@@ -27,15 +27,9 @@ namespace PetShop
 
             {
                 Form2 form = new Form2();
-                  form.Show();
+                this.Hide();  
+                form.Show();
             }
-        }
-
-        private void txtCadastro_Click(object sender, EventArgs e)
-        {
-            Form3 form = new Form3();
-            this.Hide();
-            form.Show();
         }
     }
 }
