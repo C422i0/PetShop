@@ -36,26 +36,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtGen = new System.Windows.Forms.TextBox();
             this.CalendNasc = new System.Windows.Forms.MonthCalendar();
-            this.label4 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.txtIdRaca = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.btnBackHub = new System.Windows.Forms.Button();
             this.btnCadAni = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MintCream;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnCadAni);
             this.panel1.Controls.Add(this.btnBackHub);
             this.panel1.Controls.Add(this.txtIdCliente);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtIdRaca);
             this.panel1.Controls.Add(this.label);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.CalendNasc);
             this.panel1.Controls.Add(this.txtGen);
             this.panel1.Controls.Add(this.label3);
@@ -122,15 +122,6 @@
             this.CalendNasc.Name = "CalendNasc";
             this.CalendNasc.TabIndex = 6;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 118);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Data de nascimento";
-            // 
             // label
             // 
             this.label.AutoSize = true;
@@ -182,6 +173,15 @@
             this.btnCadAni.Text = "Cadastrar novo animal";
             this.btnCadAni.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(294, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Data de nascimento";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,9 +210,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtIdRaca;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MonthCalendar CalendNasc;
         private System.Windows.Forms.TextBox txtGen;
         private System.Windows.Forms.Button btnCadAni;
+        private System.Windows.Forms.Label label4;
     }
 }
