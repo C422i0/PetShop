@@ -10,46 +10,45 @@ using System.Windows.Forms;
 
 namespace PetShop
 {
-    public partial class Form4 : Form
+    public partial class Form6 : Form
     {
-        public Form4()
+        public Form6()
         {
             InitializeComponent();
         }
 
-        private void btnBackHub_Click(object sender, EventArgs e)
+        private void btnHub_Click(object sender, EventArgs e)
         {
             Form2 form = new Form2();
             this.Hide();
             form.Show();
         }
 
-        private void btnCadAni_Click(object sender, EventArgs e)
+        private void btnCadRaca_Click(object sender, EventArgs e)
         {
-            if (txtNomeAnimal.Text == "" ^ txtGen.Text=="" ^ txtEsp.Text=="" ^ txtIdCliente.Text=="" ^ txtIdRaca.Text=="")
+            if (txtRaca.Text =="" ^ txtPorte.Text =="")
             {
-                MessageBox.Show("Termine de cadastrar o animal primeiro!");
+                MessageBox.Show("Termine de cadastrar primeiro amigo!");
             }
             else
-
             {
-                MessageBox.Show("Animal cadastrado com sucesso!");
+                MessageBox.Show("Raça cadastrado com sucesso!");
             }
         }
 
         private void btnPesc_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Animal Encontrado");
+             MessageBox.Show("Raça Encontrada");
         }
 
         private void btnAlt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Animal alterado com sucesso!");
+            MessageBox.Show("Raça alterado com sucesso!");
         }
 
         private void btnDelet_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Animal deletado com sucesso!");
+            MessageBox.Show("Raça deletado com sucesso!");
         }
     }
 }

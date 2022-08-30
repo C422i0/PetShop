@@ -52,5 +52,20 @@ namespace PetShop
             this.Hide();
             form.Show();
         }
+
+        private void btnPesc_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario Encontrado");
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario alterado com sucesso!");
+        }
+
+        private void btnDelet_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario deletado com sucesso!");
+        }
     }
 }

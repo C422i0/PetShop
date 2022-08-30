@@ -29,26 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNomeAnimal = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEsp = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtGen = new System.Windows.Forms.TextBox();
-            this.CalendNasc = new System.Windows.Forms.MonthCalendar();
-            this.label = new System.Windows.Forms.Label();
-            this.txtIdRaca = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
-            this.btnBackHub = new System.Windows.Forms.Button();
-            this.btnCadAni = new System.Windows.Forms.Button();
+            this.btnDelet = new System.Windows.Forms.Button();
+            this.btnAlt = new System.Windows.Forms.Button();
+            this.btnPesc = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnCadAni = new System.Windows.Forms.Button();
+            this.btnBackHub = new System.Windows.Forms.Button();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIdRaca = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
+            this.CalendNasc = new System.Windows.Forms.MonthCalendar();
+            this.txtGen = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEsp = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNomeAnimal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MintCream;
+            this.panel1.Controls.Add(this.btnDelet);
+            this.panel1.Controls.Add(this.btnAlt);
+            this.panel1.Controls.Add(this.btnPesc);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnCadAni);
             this.panel1.Controls.Add(this.btnBackHub);
@@ -68,91 +74,54 @@
             this.panel1.Size = new System.Drawing.Size(560, 350);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnDelet
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome do animal";
+            this.btnDelet.Location = new System.Drawing.Point(87, 319);
+            this.btnDelet.Name = "btnDelet";
+            this.btnDelet.Size = new System.Drawing.Size(75, 23);
+            this.btnDelet.TabIndex = 17;
+            this.btnDelet.Text = "Deletar";
+            this.btnDelet.UseVisualStyleBackColor = true;
+            this.btnDelet.Click += new System.EventHandler(this.btnDelet_Click);
             // 
-            // txtNomeAnimal
+            // btnAlt
             // 
-            this.txtNomeAnimal.Location = new System.Drawing.Point(25, 38);
-            this.txtNomeAnimal.Name = "txtNomeAnimal";
-            this.txtNomeAnimal.Size = new System.Drawing.Size(245, 20);
-            this.txtNomeAnimal.TabIndex = 1;
+            this.btnAlt.Location = new System.Drawing.Point(169, 319);
+            this.btnAlt.Name = "btnAlt";
+            this.btnAlt.Size = new System.Drawing.Size(75, 23);
+            this.btnAlt.TabIndex = 16;
+            this.btnAlt.Text = "Alterar";
+            this.btnAlt.UseVisualStyleBackColor = true;
+            this.btnAlt.Click += new System.EventHandler(this.btnAlt_Click);
             // 
-            // label2
+            // btnPesc
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Especie";
+            this.btnPesc.Location = new System.Drawing.Point(250, 319);
+            this.btnPesc.Name = "btnPesc";
+            this.btnPesc.Size = new System.Drawing.Size(75, 23);
+            this.btnPesc.TabIndex = 15;
+            this.btnPesc.Text = "Pesquisar";
+            this.btnPesc.UseVisualStyleBackColor = true;
+            this.btnPesc.Click += new System.EventHandler(this.btnPesc_Click);
             // 
-            // txtEsp
+            // label4
             // 
-            this.txtEsp.Location = new System.Drawing.Point(25, 88);
-            this.txtEsp.Name = "txtEsp";
-            this.txtEsp.Size = new System.Drawing.Size(245, 20);
-            this.txtEsp.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(294, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Data de nascimento";
             // 
-            // label3
+            // btnCadAni
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Gênero";
-            // 
-            // txtGen
-            // 
-            this.txtGen.Location = new System.Drawing.Point(25, 140);
-            this.txtGen.Name = "txtGen";
-            this.txtGen.Size = new System.Drawing.Size(137, 20);
-            this.txtGen.TabIndex = 5;
-            // 
-            // CalendNasc
-            // 
-            this.CalendNasc.Location = new System.Drawing.Point(294, 140);
-            this.CalendNasc.Name = "CalendNasc";
-            this.CalendNasc.TabIndex = 6;
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(22, 174);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(60, 13);
-            this.label.TabIndex = 8;
-            this.label.Text = "Id da Raça";
-            // 
-            // txtIdRaca
-            // 
-            this.txtIdRaca.Location = new System.Drawing.Point(25, 190);
-            this.txtIdRaca.Name = "txtIdRaca";
-            this.txtIdRaca.Size = new System.Drawing.Size(137, 20);
-            this.txtIdRaca.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 222);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "id Cliente";
-            // 
-            // txtIdCliente
-            // 
-            this.txtIdCliente.Location = new System.Drawing.Point(25, 238);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(137, 20);
-            this.txtIdCliente.TabIndex = 11;
+            this.btnCadAni.Location = new System.Drawing.Point(331, 319);
+            this.btnCadAni.Name = "btnCadAni";
+            this.btnCadAni.Size = new System.Drawing.Size(123, 23);
+            this.btnCadAni.TabIndex = 13;
+            this.btnCadAni.Text = "Cadastrar novo animal";
+            this.btnCadAni.UseVisualStyleBackColor = true;
+            this.btnCadAni.Click += new System.EventHandler(this.btnCadAni_Click);
             // 
             // btnBackHub
             // 
@@ -164,23 +133,91 @@
             this.btnBackHub.UseVisualStyleBackColor = true;
             this.btnBackHub.Click += new System.EventHandler(this.btnBackHub_Click);
             // 
-            // btnCadAni
+            // txtIdCliente
             // 
-            this.btnCadAni.Location = new System.Drawing.Point(331, 319);
-            this.btnCadAni.Name = "btnCadAni";
-            this.btnCadAni.Size = new System.Drawing.Size(123, 23);
-            this.btnCadAni.TabIndex = 13;
-            this.btnCadAni.Text = "Cadastrar novo animal";
-            this.btnCadAni.UseVisualStyleBackColor = true;
+            this.txtIdCliente.Location = new System.Drawing.Point(25, 238);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(137, 20);
+            this.txtIdCliente.TabIndex = 11;
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(294, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Data de nascimento";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 222);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "id Cliente";
+            // 
+            // txtIdRaca
+            // 
+            this.txtIdRaca.Location = new System.Drawing.Point(25, 190);
+            this.txtIdRaca.Name = "txtIdRaca";
+            this.txtIdRaca.Size = new System.Drawing.Size(137, 20);
+            this.txtIdRaca.TabIndex = 9;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(22, 174);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(60, 13);
+            this.label.TabIndex = 8;
+            this.label.Text = "Id da Raça";
+            // 
+            // CalendNasc
+            // 
+            this.CalendNasc.Location = new System.Drawing.Point(294, 140);
+            this.CalendNasc.Name = "CalendNasc";
+            this.CalendNasc.TabIndex = 6;
+            // 
+            // txtGen
+            // 
+            this.txtGen.Location = new System.Drawing.Point(25, 140);
+            this.txtGen.Name = "txtGen";
+            this.txtGen.Size = new System.Drawing.Size(137, 20);
+            this.txtGen.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 124);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Gênero";
+            // 
+            // txtEsp
+            // 
+            this.txtEsp.Location = new System.Drawing.Point(25, 88);
+            this.txtEsp.Name = "txtEsp";
+            this.txtEsp.Size = new System.Drawing.Size(245, 20);
+            this.txtEsp.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Especie";
+            // 
+            // txtNomeAnimal
+            // 
+            this.txtNomeAnimal.Location = new System.Drawing.Point(25, 38);
+            this.txtNomeAnimal.Name = "txtNomeAnimal";
+            this.txtNomeAnimal.Size = new System.Drawing.Size(245, 20);
+            this.txtNomeAnimal.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome do animal";
             // 
             // Form4
             // 
@@ -190,7 +227,7 @@
             this.ClientSize = new System.Drawing.Size(636, 432);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
-            this.Text = "2";
+            this.Text = "Cadastro de animais";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -214,5 +251,8 @@
         private System.Windows.Forms.TextBox txtGen;
         private System.Windows.Forms.Button btnCadAni;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnDelet;
+        private System.Windows.Forms.Button btnAlt;
+        private System.Windows.Forms.Button btnPesc;
     }
 }

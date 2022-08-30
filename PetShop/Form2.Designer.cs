@@ -182,6 +182,7 @@
             this.btnCadRac.Size = new System.Drawing.Size(110, 23);
             this.btnCadRac.TabIndex = 1;
             this.btnCadRac.UseVisualStyleBackColor = true;
+            this.btnCadRac.Click += new System.EventHandler(this.btnCadRac_Click);
             // 
             // label11
             // 
@@ -260,6 +261,7 @@
             this.btnCadCli.Size = new System.Drawing.Size(110, 23);
             this.btnCadCli.TabIndex = 1;
             this.btnCadCli.UseVisualStyleBackColor = true;
+            this.btnCadCli.Click += new System.EventHandler(this.btnCadCli_Click);
             // 
             // label8
             // 
@@ -316,7 +318,7 @@
             this.ClientSize = new System.Drawing.Size(650, 340);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
-            this.Text = "Hub Main PetShop";
+            this.Text = "-";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
