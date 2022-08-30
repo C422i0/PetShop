@@ -50,5 +50,19 @@ namespace PetShop
             this.Hide();
             form.Show();
         }
+
+        private void btnCadTel_Click(object sender, EventArgs e)
+        {
+            Form7 form = new Form7();
+            this.Hide();
+            form.Show();
+        }
+
+        private void btnNovaVenda_Click(object sender, EventArgs e)
+        {
+            Form8 form = new Form8();
+            this.Hide();
+            form.Show();
+        }
     }
 }

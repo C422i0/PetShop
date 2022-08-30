@@ -125,6 +125,7 @@
             this.btnNovaVenda.Size = new System.Drawing.Size(110, 23);
             this.btnNovaVenda.TabIndex = 1;
             this.btnNovaVenda.UseVisualStyleBackColor = true;
+            this.btnNovaVenda.Click += new System.EventHandler(this.btnNovaVenda_Click);
             // 
             // btnCadTel
             // 
@@ -133,6 +134,7 @@
             this.btnCadTel.Size = new System.Drawing.Size(110, 23);
             this.btnCadTel.TabIndex = 1;
             this.btnCadTel.UseVisualStyleBackColor = true;
+            this.btnCadTel.Click += new System.EventHandler(this.btnCadTel_Click);
             // 
             // btnCadEnd
             // 
