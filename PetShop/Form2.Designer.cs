@@ -95,9 +95,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(432, 132);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 13);
+            this.label12.Size = new System.Drawing.Size(78, 13);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Novo Usuario";
+            this.label12.Text = "-Novo Usuario-";
             // 
             // btnCadastroUsu
             // 
@@ -143,6 +143,7 @@
             this.btnCadEnd.Size = new System.Drawing.Size(110, 23);
             this.btnCadEnd.TabIndex = 1;
             this.btnCadEnd.UseVisualStyleBackColor = true;
+            this.btnCadEnd.Click += new System.EventHandler(this.btnCadEnd_Click);
             // 
             // btnItensServ
             // 
@@ -151,6 +152,7 @@
             this.btnItensServ.Size = new System.Drawing.Size(110, 23);
             this.btnItensServ.TabIndex = 1;
             this.btnItensServ.UseVisualStyleBackColor = true;
+            this.btnItensServ.Click += new System.EventHandler(this.btnItensServ_Click);
             // 
             // btnAgen
             // 
@@ -159,15 +161,16 @@
             this.btnAgen.Size = new System.Drawing.Size(110, 23);
             this.btnAgen.TabIndex = 1;
             this.btnAgen.UseVisualStyleBackColor = true;
+            this.btnAgen.Click += new System.EventHandler(this.btnAgen_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(291, 80);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Nova Venda";
+            this.label6.Text = "-Nova Venda-";
             // 
             // btnSevVend
             // 
@@ -176,6 +179,7 @@
             this.btnSevVend.Size = new System.Drawing.Size(110, 23);
             this.btnSevVend.TabIndex = 1;
             this.btnSevVend.UseVisualStyleBackColor = true;
+            this.btnSevVend.Click += new System.EventHandler(this.btnSevVend_Click);
             // 
             // btnCadRac
             // 
@@ -191,18 +195,18 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(429, 23);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 13);
+            this.label11.Size = new System.Drawing.Size(96, 13);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Cadastro telefone";
+            this.label11.Text = "-Cadastro telefone-";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(291, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 13);
+            this.label5.Size = new System.Drawing.Size(119, 13);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Cadastro de Endereço";
+            this.label5.Text = "-Cadastro de Endereço-";
             // 
             // btnServ
             // 
@@ -211,6 +215,7 @@
             this.btnServ.Size = new System.Drawing.Size(111, 23);
             this.btnServ.TabIndex = 1;
             this.btnServ.UseVisualStyleBackColor = true;
+            this.btnServ.Click += new System.EventHandler(this.btnServ_Click);
             // 
             // btnCadAni
             // 
@@ -226,18 +231,18 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(429, 80);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 13);
+            this.label10.Size = new System.Drawing.Size(75, 13);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Itens Serviço";
+            this.label10.Text = "-Itens Serviço-";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(160, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Agendamento";
+            this.label4.Text = "-Agendamento-";
             // 
             // btnEstProd
             // 
@@ -246,15 +251,16 @@
             this.btnEstProd.Size = new System.Drawing.Size(110, 23);
             this.btnEstProd.TabIndex = 1;
             this.btnEstProd.UseVisualStyleBackColor = true;
+            this.btnEstProd.Click += new System.EventHandler(this.btnEstProd_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(291, 132);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 13);
+            this.label9.Size = new System.Drawing.Size(91, 13);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Serviço Vendido";
+            this.label9.Text = "-Serviço Vendido-";
             // 
             // btnCadCli
             // 
@@ -270,9 +276,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(159, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Serviço";
+            this.label8.Text = "-Serviço-";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
@@ -280,27 +286,27 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Cadastro Raça";
+            this.label3.Text = "-Cadastro Raça-";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(159, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Estoque de Produtos";
+            this.label7.Text = "-Estoque de Produtos-";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(21, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
+            this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Cadastro Animais";
+            this.label2.Text = "-Cadastro Animais-";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -308,9 +314,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(21, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cadastro Cliente";
+            this.label1.Text = "-Cadastro Cliente-";
             // 
             // Form2
             // 

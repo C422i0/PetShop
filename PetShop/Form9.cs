@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PetShop
 {
-    public partial class Form8 : Form
+    public partial class Form9 : Form
     {
-        public Form8()
+        public Form9()
         {
             InitializeComponent();
         }
@@ -26,29 +26,29 @@ namespace PetShop
 
         private void btnCad_Click(object sender, EventArgs e)
         {
-            if (txtIdCliente.Text == "" && txtIdVenda.Text == "")
+            if (txtRua.Text == "")
             {
                 MessageBox.Show("Termine de cadastrar primeiro amigo!");
             }
             else
             {
-                MessageBox.Show("Nova venda cadastrada com sucesso!");
+                MessageBox.Show("Endereço cadastrado com sucesso!");
             }
         }
 
         private void btnPesc_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nova venda encontrada!");
+            MessageBox.Show("Endereço encontrado!");
         }
 
         private void btnAlt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nova venda alterada!");
+            MessageBox.Show("Endereço alterado com sucesso!");
         }
 
-        private void btnDelet_Click(object sender, EventArgs e)
+        private void btnDel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nova venda deletada!");
+            MessageBox.Show("Endereço deletado com sucesso!");
         }
     }
 }
