@@ -31,5 +31,41 @@ namespace PetShop
                 form.Show();
             }            
         }
+
+        private void btnCadHub_Click(object sender, EventArgs e)
+        {
+            if (txtCadNome.Text == "")
+            {
+                MessageBox.Show("Termine de se cadastrar primeiro amigo!");
+            }
+            else
+            {
+                Form2 form = new Form2();
+                this.Hide();
+                form.Show();
+            }
+        }
+
+        private void btnVolta_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            this.Hide();
+            form.Show();
+        }
+
+        private void btnPesc_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario Encontrado");
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario alterado com sucesso!");
+        }
+
+        private void btnDelet_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario deletado com sucesso!");
+        }
     }
 }
